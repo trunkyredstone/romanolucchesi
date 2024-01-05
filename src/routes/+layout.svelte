@@ -1,3 +1,7 @@
+<script lang="ts">
+    let year = new Date().getFullYear();
+</script>
+
 <style>
     .app {
         font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -12,7 +16,7 @@
     <div class={"align-items-center h-100 row mx-0"}>
         <slot/>
         <footer class="pb-3">
-            <small>Made on Svelte with {"<3"} © Romano Lucchesi 2021-2023</small>
+            <small>Made on Svelte with {"<3"} © Romano Lucchesi 2021-{year}</small>
             <br/>
             <img alt={"favicon"} src={"favicon.ico"}/>
         </footer>
